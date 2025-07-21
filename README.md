@@ -5,7 +5,7 @@ Central repository for [XDEV's GitHub packages](https://github.com/orgs/xdev-sof
 ## How to use it?
 
 > [!NOTE]
-> → Related [GitHub documentation](https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-apache-maven-registry#authenticating-with-a-personal-access-token)
+> Related [GitHub documentation](https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-apache-maven-registry#authenticating-with-a-personal-access-token)
 
 ``~/.m2/settings.xml``
 ```xml
@@ -53,3 +53,9 @@ Central repository for [XDEV's GitHub packages](https://github.com/orgs/xdev-sof
 
 Because we currently have around 50 individual repos that would all require you to add them to your ``settings.xml``.
 This is impossible to manage and also massively degrades performance.
+
+#### Snapshots?
+
+Can be published into the repo but will be automatically deleted after a few days.
+
+[![Snapshot Cleanup](https://github.com/xdev-software/central/actions/workflows/snapshot-cleanup.yml/badge.svg)](https://github.com/xdev-software/central/actions/workflows/snapshot-cleanup.yml)
