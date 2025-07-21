@@ -11,6 +11,7 @@ jobs:
     permissions:
       packages: write
       contents: read
+    timeout-minutes: 15
     steps:
       - name: Cleanup
         env:
