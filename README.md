@@ -87,7 +87,7 @@ gxGC9+f/BDmbKpDF3EoA/0ybnShW/o41eRWnF/rMbjsedRkR0oW81PodEfgsyJYF
 Available at [keyserver.ubuntu.com](https://keyserver.ubuntu.com/pks/lookup?search=1c942874abc6e7d6f17018e214eb8e48c380eaaa&fingerprint=on&op=index).<br/>
 You can also inspect the public key online using tools like https://cirw.in/gpg-decoder/.
 
-For example you can check the key used for signing artifacts using the [pgpverify-maven-plugin](https://github.com/s4u/pgpverify-maven-plugin):<br/>
+Additionally you can check the signed artifacts using maven plugins like the [pgpverify-maven-plugin](https://github.com/s4u/pgpverify-maven-plugin):<br/>
 `mvn org.simplify4u.plugins:pgpverify-maven-plugin:show -Dartifact=software.xdev:<artifactId>:1.2.3`
 
 Older releases (before 2022) might use different keys.
