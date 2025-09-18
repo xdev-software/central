@@ -59,3 +59,29 @@ This is impossible to manage and also massively degrades performance.
 Can be published into the repo but will be automatically deleted after a few days.
 
 [![Snapshot Cleanup](https://github.com/xdev-software/central/actions/workflows/snapshot-cleanup.yml/badge.svg)](https://github.com/xdev-software/central/actions/workflows/snapshot-cleanup.yml)
+
+#### Are the artifacts cryptographically signed?
+
+_Last updated: 2025-09_
+
+Yes, all artifacts should be signed with
+```
+-----BEGIN PGP PUBLIC KEY BLOCK-----
+
+mDMEYanFmRYJKwYBBAHaRw8BAQdAwe6KCL97lXybaEP0YmvILxEra1NKqUy6MPyJ
+1YslrwK0JVhERVYgU29mdHdhcmUgPGluZm9AeGRldi1zb2Z0d2FyZS5kZT6IkAQT
+FggAOAIbAwULCQgHAgYVCgkICwIEFgIDAQIeAQIXgBYhBByUKHSrxufW8XAY4hTr
+jkjDgOqqBQJlX1QbAAoJEBTrjkjDgOqqKrwBAJ+eAxW+JyUiD1ctvAeYllJlbUk0
+d5O4DG93rrJNRnQNAQCEeDefKB1u/L3LuB9WSCHF7ferP+JZW2OMUHJq/QksB7g4
+BGGpxZkSCisGAQQBl1UBBQEBB0B4U6R9YDwjffS8fShj23blN4dV5lwKBEpKcpON
+I/yHTwMBCAeIfgQYFggAJgIbDBYhBByUKHSrxufW8XAY4hTrjkjDgOqqBQJlX1Yl
+BQkJlH6MAAoJEBTrjkjDgOqql1oA/jMFKPwyPK3AwatXa4pHEksSWIMRgvfn/wQ5
+myqQxdxKAP9Mm50oVv6ONXkVpxf6zG47HnUZEdKFvNT6HRH4LMiWBQ==
+=h0V/
+-----END PGP PUBLIC KEY BLOCK-----
+```
+
+For example you can check the key used for signing artifacts using the [pgpverify-maven-plugin](https://github.com/s4u/pgpverify-maven-plugin):
+`mvn org.simplify4u.plugins:pgpverify-maven-plugin:show -Dartifact=software.xdev:<artifactId>:1.2.3`
+
+Older releases (before 2022) might use different keys.
