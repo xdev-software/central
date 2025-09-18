@@ -81,7 +81,8 @@ myqQxdxKAP9Mm50oVv6ONXkVpxf6zG47HnUZEdKFvNT6HRH4LMiWBQ==
 -----END PGP PUBLIC KEY BLOCK-----
 ```
 
-Also available at [keyserver.ubuntu.com](https://keyserver.ubuntu.com/pks/lookup?search=1c942874abc6e7d6f17018e214eb8e48c380eaaa&fingerprint=on&op=index).
+Available at [keyserver.ubuntu.com](https://keyserver.ubuntu.com/pks/lookup?search=1c942874abc6e7d6f17018e214eb8e48c380eaaa&fingerprint=on&op=index).<br/>
+You can also inspect the public key online using tools like https://cirw.in/gpg-decoder/.
 
 For example you can check the key used for signing artifacts using the [pgpverify-maven-plugin](https://github.com/s4u/pgpverify-maven-plugin):<br/>
 `mvn org.simplify4u.plugins:pgpverify-maven-plugin:show -Dartifact=software.xdev:<artifactId>:1.2.3`
